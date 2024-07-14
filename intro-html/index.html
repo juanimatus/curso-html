@@ -1,107 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <title>Mi primera página</title>
-    <style>
-        table,
-        th,
-        td {
-            border: 1px solid black;
-        }
-    </style>
+
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="animated pulse">BIENVENIDOS</div>
 
-    <table style="width: 500px;">
-        <thead>
-            <tr>
-                <th>Producto</th>
-                <th>Precio</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Hola beats</td>
-                <td>Gratis</td>
-            </tr>
-            <tr>
-                <td>Chanchito feliz</td>
-                <td>19,90$</td>
-            </tr>
-            </tr>
-            <tr>
-                <td>Chanchito feliz muy feliz</td>
-                <td>29,90$</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <td></td>
-            <td>Total: 49,80$</td>
-        </tfoot>
-    </table>
-    <!--ul es lista no ordenada -->
+    <header id="titulo">
+        <h1 id="titulo">Blog de Juani</h1>
+    </header>
 
-    <ul>
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-        <li>Elemento 4</li>
-    </ul>
-    <!--ol es lista ordenada -->
-    <ol>
-        <li value="50">Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-        <li>Elemento 4</li>
-        <li>
-            <ol>
-                <li style="list-style-type: lower-roman;">sub elemento 1</li>
-                <li style="list-style-type: lower-roman;">sub elemento 2</li>
-                <li style=" list-style-type: lower-roman;">sub elemento 3</li>
-            </ol>
-        </li>
-    </ol>
-
-
-
-    <form action="/formulario" method="POST">
-        <label for="nombre">Nombre</label>
-        <input value="chanchito" type="text" "nombre" name="lalala" placeholder="Juani..." />
-        <br>
-        <label for="apellido">Apellido</label>
-        <input value="feliz" text" "apellido" name="apellido" placeholder="Matus..." />
-        <br>
-        <label for="comentario">Comentario</label>
-        <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario"
-            name="comentario">este es un valor por defecto</textarea>
-        <br>
-        <button type="button"></button>
-        <button type="reset">Tipo reset</button>
-        <button type="submit">Tipo submit</button>
-
-        <form>
-            <h1>Mi primer heading</h1>
-            <h2>Mi segundo heading</h2>
-            <h3>Mi tercer heading</h3>
-            <h4>Mi cuarto heading</h4>
-            <h5>Mi quinto heading</h5>
-            <h6>Chanchito feliz</h6>
-            <p>holaaaaa como estas</p>
-            <p>holaaaaa como estas</p>
-            <hr>
-            <h2>chanchito felipe</h2>
-            <p>texto un <span style="color:blue">poco mas largo</span> que el anterior para mostrar<br><br>
-                la etiqueta de span!
-
-            </p>
-            <!--comentario ejemplo y no va a aparecer en el explorador-->
-            <a target="_blank" href="https://google.com.ar">ir a google</a>
-            <img src="img/fondo2.jpg" height="200" />
-            <form>
-
-
+    <section class="container">
+        <article class="post">
+            <h2>PRIMER TITULO</h2>
+            <p>Descripción de mi post</p>
+            <img src="img/fondo2.jpg" width="400">
+            <p>Texto del artículo que hay acá y es texto de prueba. Juani</p>
+        </article>
+        <article class="post"> 
+            <h2>Título de mi post 2</h2>
+            <p>Descripción de mi post 2</p>
+            <img src="img/fondo1.jpg" width="400">
+            <p>Texto del artículo que hay acá y es texto de prueba. Juani</p>
+        </article>
+        <article class="post">
+            <h2>Título de mi post 3</h2>
+            <p>Descripción de mi post 3</p>
+            <img src="img/fondo3.jpg" width="400">
+            <p>Texto del artículo que hay acá y es texto de prueba. Juani</p>
+        </article>
+    </section>
+   
+    <footer>
+        <section>
+            <a href="#titulo">Ir al comienzo</a>
+            <a href="mailto:juanimatus1@gmail.com">Contactame aquí</a>
+        </section>
+        <p>Copyright Julio 2024
+            
+        </p>
+    </footer>
 </body>
 
 </html>
